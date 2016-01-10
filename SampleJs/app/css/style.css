@@ -1,0 +1,392 @@
+﻿.landing {
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background: url(../img/login-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.focusedform {
+    /*background-color: transparent;*/
+    background-color: rgba(8, 8, 8, 0.89);
+}
+
+.page-break {
+    background-color: white;
+    color: black;
+    display: block;
+    font-family: sans-serif, helvetica, tahoma, arial;
+    font-size: small;
+    page-break-before: always;
+}
+
+.highlight {
+    background-color: #B8D7FF;
+}
+
+.navbar-brand {
+    -ms-text-shadow: none;
+    background: url("../img/logo-small.png") no-repeat center center;
+    background-color: transparent;
+    border: 0;
+    color: transparent;
+    font: 0/0 a;
+    height: 34px;
+    margin: 7px 4px 4px 4px;
+    text-shadow: none;
+    width: 206px;
+}
+
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+    cursor: pointer;
+}
+
+.xfade {
+    -moz-transition: opacity 0.25s ease-in;
+    -ms-opacity: 0;
+    -ms-transition: opacity 0.25s ease-in;
+    -o-transition: opacity 0.25s ease-in;
+    -webkit-transition: opacity 0.25s ease-in;
+    opacity: 0;
+    transition: opacity 0.25s ease-in;
+}
+
+    .xfade.in {
+        -ms-opacity: 1;
+        opacity: 1;
+    }
+
+/*
+  Allow angular.js to be loaded in body, hiding cloaked elements until
+  templates compile.  The !important is important given that there may be
+  other selectors that are more specific or come later and might alter display.
+ */
+
+[ng\:cloak], [ng-cloak], .ng-cloak {
+    display: none !important;
+}
+
+/* ------------------- ServiceBay Frost v1.1 --------------------- */
+
+.info-tiles .tiles-footer:after {
+    border-bottom: none;
+    border-right: none;
+}
+
+.panel-body.collapse.in {
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -ms-border-bottom-left-radius: 8px;
+    -ms-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    /*-ms-border-top-left-radius: inherit;
+    border-top-left-radius: inherit;
+    -ms-border-top-right-radius: inherit;
+    border-top-right-radius: inherit;*/
+}
+
+.fade-hide {
+    -moz-transition: visibility 0s 2s, opacity 2s linear;
+    -ms-opacity: 0;
+    -ms-transition: visibility 0s 2s, opacity 2s linear;
+    -o-transition: visibility 0s 2s, opacity 2s linear;
+    -webkit-transition: visibility 0s 2s, opacity 2s linear;
+    opacity: 0;
+    transition: visibility 0s 2s, opacity 2s linear;
+    visibility: hidden;
+}
+
+.modal-content {
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    -ms-border-bottom-left-radius: 8px;
+    -ms-border-bottom-right-radius: 8px;
+    -ms-border-top-left-radius: 8px;
+    -ms-border-top-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.panel-primary .panel-heading {
+    border-left-color: #222;
+    border-right-color: #222;
+    border-top-color: #222;
+    /*background-color: rgba(85, 153, 255, 0.6);*/
+}
+
+
+.panel-heading {
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    -ms-border-top-left-radius: 8px;
+    -ms-border-top-right-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border: 1px;
+    border-left-color: #222;
+    border-right-color: #222;
+    border-top-color: #222;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    color: #fff;
+}
+
+
+
+.panel-primary .panel-body {
+    border-top: 0;
+}
+
+
+.panel.panel-primary {
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    -ms-border-bottom-left-radius: 8px;
+    -ms-border-bottom-right-radius: 8px;
+    -ms-border-top-left-radius: 8px;
+    -ms-border-top-right-radius: 8px;
+    -ms-box-shadow: 0 0 190px #bbb;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -webkit-box-shadow: 0 0 190px #bbb;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    box-shadow: 0 0 190px #bbb;
+}
+
+[class*="panel-"].panel .panel-body {
+    background-color: rgba(255, 255, 255, 0.93);
+    border-bottom: 0;
+    /*-webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;*/
+    border-left-color: #222;
+    border-right-color: #222;
+}
+
+[class*="panel-"].panel .panel-footer {
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -ms-border-bottom-left-radius: 8px;
+    -ms-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    background-color: rgba(232, 232, 232, 0.87);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-color: #222;
+}
+
+#wrap {
+    -moz-background-size: cover;
+    -moz-box-shadow: inset 6px 6px 10px 0px #888;
+    -ms-background-size: cover;
+    -ms-box-shadow: inset 6px 6px 10px 0px #888;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    -webkit-box-shadow: inset 6px 6px 10px 0px #888;
+    background: url(../img/login-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+    box-shadow: inset 6px 6px 10px 0px #888;
+}
+
+#page-heading {
+    -moz-box-shadow: 6px 6px 10px 0 #888;
+    -ms-box-shadow: 6px 6px 10px 0 #888;
+    -webkit-box-shadow: 6px 6px 10px 0 #888;
+    box-shadow: 6px 6px 10px 0 #888;
+    /*background-color: rgba(232, 232, 232, 0.87);*/
+}
+
+#wrap {
+    background-color: #EEE;
+}
+
+    #wrap .container {
+        background-color: #e8e8e8;
+        background-color: rgba(8, 8, 8, 0.89);
+    }
+
+.haloBox {
+    -moz-box-shadow: 6px 6px 80px 0 #000;
+    -ms-box-shadow: 6px 6px 80px 0 #000;
+    -webkit-box-shadow: 6px 6px 80px 0 #000;
+    box-shadow: 6px 6px 80px 0 #000;
+}
+
+.radiusBox {
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+.focusedform .verticalcenter {
+    top: 30%;
+}
+
+body {
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -webkit-background-size: cover;
+    background: url(../img/login-bg.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+.dataTables_wrapper {
+    overflow: auto;
+}
+
+#page-content {
+    height: 100%;
+    min-height: 100%;
+    margin-left: 0;
+}
+
+body.modal-open .datepicker {
+    z-index: 1200 !important;
+}
+
+.modal-header-danger > h4 {
+    color: #fff;
+}
+
+.modal-header-success {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -ms-border-top-left-radius: 5px;
+    -ms-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    background-color: #5cb85c;
+    border-bottom: 1px solid #eee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    padding: 9px 15px;
+}
+
+.modal-header-warning {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -ms-border-top-left-radius: 5px;
+    -ms-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    background-color: #f0ad4e;
+    border-bottom: 1px solid #eee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    padding: 9px 15px;
+}
+
+.modal-header-danger {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -ms-border-top-left-radius: 5px;
+    -ms-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    background-color: #d9534f;
+    border-bottom: 1px solid #eee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    padding: 9px 15px;
+}
+
+.modal-header-info {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -ms-border-top-left-radius: 5px;
+    -ms-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    background-color: #5bc0de;
+    border-bottom: 1px solid #eee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    padding: 9px 15px;
+}
+
+.modal-header-primary {
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-topright: 5px;
+    -ms-border-top-left-radius: 5px;
+    -ms-border-top-right-radius: 5px;
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    background-color: #428bca;
+    border-bottom: 1px solid #eee;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    color: #fff;
+    padding: 9px 15px;
+}
+
+.modal-footer {
+    -moz-border-radius-bottomleft: 8px;
+    -moz-border-radius-bottomright: 8px;
+    -ms-border-bottom-left-radius: 8px;
+    -ms-border-bottom-right-radius: 8px;
+    -webkit-border-bottom-left-radius: 8px;
+    -webkit-border-bottom-right-radius: 8px;
+    background-color: rgba(232, 232, 232, 0.87);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.form-group.required .control-label:after {
+    color: #d00;
+    content: "*";
+    font-style: oblique;
+    margin-left: 8px;
+    position: absolute;
+    top: 7px;
+}
+
+.table-striped > thead {
+    background-color: #e0e0e0;
+}
+
+.table-striped > tbody > tr:nth-child(odd) > td,
+.table-striped > tbody > tr:nth-child(odd) > th {
+    /*background-color: #e8e8e8;*/
+    background-color: #e8e8e8;
+    background-color: rgba(232, 232, 232, 0.77);
+}
+
+#page-container {
+    margin-left: 0;
+}
+
+footer {
+    margin-left: 0;
+}

@@ -1,0 +1,110 @@
+﻿<div id="page-content">
+    <div id="wrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h4>ReverseColorfy Sample</h4>
+                            <div class="options">
+                                <a class="panel-collapse">
+                                    <i class="fa fa-chevron-down"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="panel-body">
+                            <form class="form-horizontal" name="workForm">
+                                <div class="col-md-12">
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h2>Try It!</h2>
+                                    </div>
+                                </div>
+
+                                <!-- Color 1 -->
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">First Color</label>
+                                    <div class="col-sm-6">
+                                        <div class="input-group cpicker color" data-color="rgb(83,75,179)" data-color-format="rgb">
+                                            <input type="text" readonly class="form-control" value="rgb(83,75,179)" ng-model="color1">
+                                            <span class="input-group-addon"><i style="background-color: rgb(83,75,179); margin-left: 8px;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Color 2 -->
+                                <div class="form-group">
+                                    <label class="col-sm-3 control-label">Second Color</label>
+                                    <div class="col-sm-6">
+                                        <div class="input-group cpicker color" data-color="rgb(255, 146, 180)" data-color-format="rgb">
+                                            <input type="text" readonly class="form-control" value="rgb(255, 146, 180)" ng-model="color2">
+                                            <span class="input-group-addon"><i style="background-color: rgb(255, 146, 180); margin-left: 8px;"></i></span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Sample Text -->
+                                <div class="form-group" ng-class="{'has-error': submitted && workForm.sampleText.$error.required}">
+                                    <label class="col-sm-3 control-label">Sample Text</label>
+                                    <div class="col-sm-6">
+                                        <div class="input-group">
+                                            <input auto-focus class="form-control" name="sampleText" ng-blur="obscure($event)" ng-enter="update()" ng-focus="highlight($event)" ng-model="sampleText" required type="text">
+                                            <span class="input-group-btn">
+                                                <button class="btn btn-primary btn-label" ng-click="update()" type="button"><i class="fa fa-check"></i>View Result</button>
+                                            </span>
+                                        </div>
+                                        <span class="label label-danger" data-ng-show="submitted && workForm.sampleText.$error.required">Please Provide Some Text!</span>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="col-md-3">
+                                    </div>
+                                    <div class="col-md-6">
+                                        <h3 id="result">{{sampleText}}</h3>
+                                        <h3 style="color: rgb(83, 75, 179);"><span style="color: rgb(156, 96, 115);">?</span>a<span style="color: rgb(156, 96, 115);">r</span>e<span style="color: rgb(156, 96, 115);"> </span>w<span style="color: rgb(156, 96, 115);">e</span>n<span style="color: rgb(156, 96, 115);"> </span>o<span style="color: rgb(156, 96, 115);">t</span> <span style="color: rgb(156, 96, 115);">d</span>r<span style="color: rgb(156, 96, 115);">a</span>w<span style="color: rgb(156, 96, 115);">n</span>o<span style="color: rgb(156, 96, 115);"> </span>n<span style="color: rgb(156, 96, 115);">w</span>a<span style="color: rgb(156, 96, 115);">r</span>d<span style="color: rgb(156, 96, 115);"> </span>t<span style="color: rgb(156, 96, 115);">o</span>n<span style="color: rgb(156, 96, 115);"> </span>e<span style="color: rgb(156, 96, 115);">w</span> <span style="color: rgb(156, 96, 115);">e</span>r<span style="color: rgb(156, 96, 115);">A</span></h3>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-12">
+                                    <div class="col-md-2">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <h2>ReverseColorfy Source</h2>
+                                        <pre class="prettyprint linenums">
+jQuery.fn.extend({
+    reverseColorfy: function (color1, color2) {
+        var text = $(this).text();
+        var sibling = $(this).next().empty().css({ "color": color1 });
+        for (var i = 0; i < text.length; i++) {
+            if (i % 2 === 0) 
+                sibling.prepend($("&lt;span&gt;" + text[i] + "&lt;/span&gt;").css({ "color": color2 }));
+            else
+                sibling.prepend(text[i]);
+        }
+    }
+});
+</pre>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="panel-footer">
+                            <div class="row">
+                                <div class="col-sm-9 col-sm-offset-3">
+                                    <div class="btn-toolbar">
+                                        <button class="btn btn-success btn-label" ng-click="test(workForm)" ng-show="validSmartId()"><i class="fa fa-check"></i>{{actionButton}} Test</button>
+                                        <button class="btn btn-warning btn-label" ng-click="cancelEdit()" ng-show="actionButton == 'Update'"><i class="fa fa-times"></i>Cancel</button>
+                                        <button class="btn btn-success btn-label" ng-click="complete(workForm)" ng-show="isComplete == true && actionButton == 'Add'"><i class="fa fa-check"></i>Complete</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- row -->
+    </div> <!-- container -->
+</div> <!-- wrap -->
+<!-- Modal -->
